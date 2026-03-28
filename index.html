@@ -536,7 +536,7 @@
 
   <script>
     const form = document.getElementById('mailServiceForm');
-    const SCRIPT_URL = 'PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE';
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzuIIIqu6uCybRy4YtvZ6iMNZZyqUulC6ySNfkegvpThpcbnTXWHOXqWr0c5qBnVok5/exec';
 
     async function submitToSheet(payload) {
       const response = await fetch(SCRIPT_URL, {
@@ -785,7 +785,7 @@
       submitBtn.textContent = 'جاري الإرسال / Sending...';
 
       try {
-        if (!SCRIPT_URL || SCRIPT_URL.includes('PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE')) {
+        if (!SCRIPT_URL || SCRIPT_URL.includes('https://script.google.com/macros/s/AKfycbzuIIIqu6uCybRy4YtvZ6iMNZZyqUulC6ySNfkegvpThpcbnTXWHOXqWr0c5qBnVok5/exec')) {
           throw new Error('SCRIPT_URL is not set');
         }
 
